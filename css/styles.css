@@ -47,7 +47,7 @@ header nav a {
   text-decoration: none;
   font-family: novecento-sans, sans-serif;
   font-weight: semibold;
-  font-size: 15px;
+  font-size: 16px;
   margin: 0 20px;
 }
 
@@ -68,9 +68,12 @@ header nav a {
 }
 
 body {
-  background-image: url("background.jpg");
+  background-image: url("background.png");
+}
 
-
+img.background {
+  max-width: 100%
+  max-height: 40%
 }
 
 /*========================================
@@ -80,7 +83,6 @@ body {
 *
 *=========================================*/
 
-
 .container {
   margin: 0 auto;
   max-width: 900px;
@@ -88,8 +90,10 @@ body {
 }
 
 img.resize {
-  max-width:100%;
+  max-width: 900px;
+  max-width: 100%
   max-height:100%;
+  padding: 40px 0px;
 }
 
 p {
@@ -124,6 +128,12 @@ img.row {
   max-height:30%;
   margin: 0 auto;
   max-width: 240px;
+}
+
+img.side {
+  margin: 0 auto;
+  max-width: 400px;
+
 }
 
 /*========================================
