@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   border: 0;
+  text-align: center
 }
 
 h1,
@@ -34,7 +35,7 @@ header {
   position: fixed;
   left: 0;
   right: 0;
-  padding: 10px 0px;
+  padding: 15px 0px;
 }
 
 header nav ul li {
@@ -63,7 +64,13 @@ header nav a {
   padding: 0;
   text-align: center;
   margin: 0 auto;
-  max-width: 900px
+  max-width: 900px;
+}
+
+body {
+  background-image: url("background.jpg");
+
+
 }
 
 /*========================================
@@ -77,6 +84,7 @@ header nav a {
 .container {
   margin: 0 auto;
   max-width: 900px;
+  padding: 40px 0px;
 }
 
 img.resize {
@@ -85,7 +93,7 @@ img.resize {
 }
 
 p {
-  padding: 25px 50px;
+  padding: 25px 50px ;
 }
 
 /*========================================
@@ -102,7 +110,6 @@ p {
   text-decoration: none;
   padding: 10px 30px;
   border-radius: 1px;
-  text-align: center;
 }
 
 /*========================================
@@ -115,12 +122,8 @@ p {
 img.row {
   max-width:30%;
   max-height:30%;
-  text-align: center;
   margin: 0 auto;
   max-width: 240px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto }
 }
 
 /*========================================
@@ -129,3 +132,10 @@ img.row {
 *
 *
 *=========================================*/
+
+footer {
+  background: #cbaf87;
+  left: 0;
+  right: 0;
+  padding: 10px 0;
+}
