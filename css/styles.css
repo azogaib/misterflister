@@ -1,21 +1,91 @@
-body {
-  margin: 100px
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
-h1 {
-  text-align: center;
-}
-
-h2, h3 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: novecento-sans, sans-serif;
+  color: #06342F;
   text-align: center;
 }
 
 p {
-  padding: 50px;
+  font-family: adobe-caslon-pro, serif;
+  margin: 15px 0px;
+  line-height: 25px;
+  color: #06342F;
 }
 
-.center {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+/*========================================
+*
+*           Header
+*
+*
+*=========================================*/
+
+header {
+  background: #cbaf87;
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding: 10px 0px;
+}
+
+header nav ul li {
+  display: inline;
+}
+
+header nav a {
+  color: #06342F;
+  text-decoration: none;
+  font-family: novecento-sans, sans-serif;
+  font-weight: semibold;
+  font-size: 15px;
+  margin: 0 20px;
+}
+
+/*========================================
+*
+*     Hero Image Section
+*
+*
+*=========================================*/
+
+.hero-image-section {
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 0;
+  text-align: center;
+}
+
+/*========================================
+*
+*     Container
+*
+*
+*=========================================*/
+
+.hero-image-section {
+  margin: 0 auto;
+  max-width: 900px
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+img.resize {
+  max-width:100%;
+  max-height:100%;
+}
+
+p {
+  padding: 50px;
 }
