@@ -41,6 +41,12 @@ header {
   left: 0;
   right: 0;
   padding: 0px 0px;
+  display: block;
+}
+
+.logo-container,
+header nav {
+    display: inline-block;
 }
 
 header nav ul li {
@@ -53,18 +59,19 @@ header nav a {
   font-family: novecento-sans, sans-serif;
   font-weight: semibold;
   font-size: 16px;
+  line-height: 0px.
   margin: 0 20px;
 }
 
 nav {
-  width: 25%;
+  width: 20%;
   margin: 0 auto;
   padding: 10px 0;
 }
 
 nav ul li a {
   display: block;
-  padding: 5px;
+  padding: 2px;
   text-decoration: none;
   margin: 0px;
 }
@@ -133,10 +140,10 @@ nav.fill ul li a:hover:after {
 *
 *=========================================*/
 img.logo {
-  width: 100px;
-  background: transparent;
+  width: 110px;
+  border-radius: 100px;
+  margin: 0px;
 }
-
 
 .hero-image-section {
   padding: 0px 20px 0px;
@@ -145,14 +152,6 @@ img.logo {
   max-width: 900px;
 }
 
-body {
-  background-image: url("background.png");
-
-}
-
-main {
-
-}
 /*========================================
 *
 *     Container
@@ -212,6 +211,54 @@ img.side {
   padding: 160px 0px 0px;
   margin: 0 auto;
   max-width: 400px;
+}
+
+/*========================================
+*
+*     Contact Section
+*
+*
+*=========================================*/
+
+form {
+  font-style: adobe-caslon-pro;
+}
+
+.containerheading {
+  padding: 20px 0 0 0px;
+}
+
+.contact-section {
+  padding: 100px 0;
+  width: 630px;
+  margin: 0 auto;
+}
+
+.contact {
+  margin: 20px 0px;
+}
+
+.contact div {
+  margin-bottom: 10px;
+}
+
+.label_input_wrap {
+  vertical-align: top;
+  display: block;
+}
+
+.contact input,
+.contact textarea {
+  border: 1px solid black;
+  padding: 9px 11px;
+}
+
+.submit input {
+  background: #90b6cc;
+  color: #06342f;
+  font-family: "Comfortaa", sans-serif;
+  border: none;
+  border-radius: 1px;
 }
 
 /*========================================

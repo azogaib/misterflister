@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <title>Contact Me</title>
+  <meta charset="utf-8">
+  <meta name="keywords" content="golden retriever puppy" />
+  <meta name="description" content="Come learn about Mister Flister's every day adventures!" />
+<!-- FAVIcon -->
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+<!-- CSS -->
+  <link type="text/css" rel="stylesheet" href="css/styles.css" />
+<!-- Adobe Fonts -->
+  <link rel="stylesheet" href="https://use.typekit.net/yqc3bdk.css">
+
+</head>
+
+  <body>
+
+    <header
+      <div class="logo-container">
+        <img class="logo" src="images/river-logo.png" alt="Mister Flister Logo"/>
+      </div>
+
+      <nav class="stroke">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">All About Me</a></li>
+          <li><a href="crew.html">My Crew</a></li>
+          <li><a href="adventures.html">My Adventures</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <div class="container">
+      <section class="contact-section">
+        <h1 class="containerheading">Contact Me!</h1>
+        <form class="contact" name="form" method="POST" action="form.php" onsubmit="return validateForm(this)">
+          <div class="first-name">
+            <label for="firstname" class="label_input_wrap">First Name:</label>
+            <input type="text" name="req_firstname" placeholder="Your First Name Here" id="firstname" />
+          </div>
+
+          <div class="last-name">
+            <label for="lastname" class="label_input_wrap">Last Name:</label>
+            <input type="text" name="lastname" placeholder="Your Last Name Here" id="lastname"  required />
+          </div>
+
+          <div class="email">
+            <label for="email" class="label_input_wrap">Email: </label>
+            <input type="email" name="req_email" placeholder="Your Email Here" id="email" />
+          </div>
+
+          <div class="tel">
+            <label for="telephone" class="label_input_wrap" >Telephone: </label>
+            <input type="tel" name="telephone" placeholder="Your Telephone Here" id="telephone" />
+          </div>
+
+          <div class="comments">
+            <label for="comments" class="label_input_wrap">Comments: </label>
+            <textarea name="comments" maxlength="1000" cols="55" rows="15" placeholder="Insert Message here" id="comments"></textarea>
+          </div>
+
+          <div class="submit">
+            <input type="submit" value="Send">
+          </div>
+
+        </form>
+
+
+        <footer>
+          <p>Website created by Annabelle Zogaib</p>
+        </footer>
+
+    </body>
+
+    </html>
