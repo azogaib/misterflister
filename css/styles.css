@@ -57,10 +57,8 @@ header nav a {
   color: black;
   text-decoration: none;
   font-family: novecento-sans, sans-serif;
-  font-weight: semibold;
   font-size: 16px;
   line-height: 0px.
-  margin: 0 20px;
 }
 
 nav {
@@ -135,7 +133,7 @@ nav.fill ul li a:hover:after {
 
 /*========================================
 *
-*     Hero Image Section
+*     Hero Images
 *
 *
 *=========================================*/
@@ -154,7 +152,7 @@ img.logo {
 
 /*========================================
 *
-*     Container
+*     Containers
 *
 *
 *=========================================*/
@@ -167,7 +165,6 @@ img.logo {
 
 img.resize {
   max-width: 900px;
-  max-width: 100%
   max-height:100%;
   padding: 160px 0px 0px;
 }
@@ -179,7 +176,7 @@ p {
 
 /*========================================
 *
-*     Button Section
+*     Buttons
 *
 *
 *=========================================*/
@@ -193,10 +190,9 @@ p {
   border-radius: 1px;
 }
 
-
 /*========================================
 *
-*     Image Section
+*     Images
 *
 *
 *=========================================*/
@@ -214,11 +210,6 @@ img.side {
   max-width: 400px;
 }
 
-figcaption {
-  font-style: adobe-caslon-pro
-  font-color: #06342F;
-}
-
 /*========================================
 *
 *     Contact Section
@@ -226,17 +217,13 @@ figcaption {
 *
 *=========================================*/
 
-form {
-  font-style: adobe-caslon-pro;
-}
-
 .containerheading {
   padding: 20px 0 0 0px;
 }
 
 .contact-section {
   padding: 100px 0;
-  width: 630px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -255,14 +242,14 @@ form {
 
 .contact input,
 .contact textarea {
-  border: 1px solid black;
+  border: 1px solid #06342F;
   padding: 9px 11px;
 }
 
 .submit input {
   background: #90b6cc;
   color: #06342f;
-  font-family: "Comfortaa", sans-serif;
+  font-family: "Novecento Sans", sans-serif;
   border: none;
   border-radius: 1px;
 }
