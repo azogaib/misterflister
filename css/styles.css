@@ -16,11 +16,16 @@ h6 {
   text-align: center;
 }
 
+h1 {
+  font-size: 42px;
+}
+
 p {
   font-family: adobe-caslon-pro, serif;
   margin: 15px 0px;
-  line-height: 25px;
+  line-height: 30px;
   color: #06342F;
+  font-size: 20px;
 }
 
 /*========================================
@@ -35,7 +40,7 @@ header {
   position: fixed;
   left: 0;
   right: 0;
-  padding: 15px 0px;
+  padding: 0px 0px;
 }
 
 header nav ul li {
@@ -51,17 +56,90 @@ header nav a {
   margin: 0 20px;
 }
 
+nav {
+  width: 25%;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  margin: 0px;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+
+nav ul li a:hover {
+  color: #bb834f;
+}
+
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #bb834f;
+  height: 1px;
+}
+
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+nav.fill ul li a {
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+
+nav.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
 /*========================================
 *
 *     Hero Image Section
 *
 *
 *=========================================*/
+img.logo {
+  width: 100px;
+  background: transparent;
+}
+
 
 .hero-image-section {
-  background-attachment: fixed;
-  background-size: cover;
-  padding: 0;
+  padding: 0px 20px 0px;
   text-align: center;
   margin: 0 auto;
   max-width: 900px;
@@ -69,13 +147,12 @@ header nav a {
 
 body {
   background-image: url("background.png");
+
 }
 
-img.background {
-  max-width: 100%
-  max-height: 40%
-}
+main {
 
+}
 /*========================================
 *
 *     Container
@@ -93,7 +170,7 @@ img.resize {
   max-width: 900px;
   max-width: 100%
   max-height:100%;
-  padding: 40px 0px;
+  padding: 160px 0px 0px;
 }
 
 p {
@@ -116,6 +193,7 @@ p {
   border-radius: 1px;
 }
 
+
 /*========================================
 *
 *     Image Section
@@ -131,9 +209,9 @@ img.row {
 }
 
 img.side {
+  padding: 160px 0px 0px;
   margin: 0 auto;
   max-width: 400px;
-
 }
 
 /*========================================
